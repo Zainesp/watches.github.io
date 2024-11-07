@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Watches - Purchase</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /* Google font for styling */
+        
+        body { 
+            font-family: 'Varela Round', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #fd0000; /* Light background for contrast */
+            position: relative; /* Set relative positioning for child elements */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        /* Video background styling */
+        .video-background {
+            position: fixed; /* Fixed positioning for the video */
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Cover the entire viewport */
+            z-index: -1; /* Place behind other elements */
+        }
+        header { 
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for contrast */
+            color: lemonchiffon; /* Lemon color for header text */
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
+        }
+        nav { 
+            background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent for nav */
+            overflow: hidden; 
+        }
+        nav a { 
+            float: left; 
+            display: block; 
+            color: lemonchiffon; /* Lemon color for nav links */
+            text-align: center; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
+        }
+        nav a:hover { 
+            background-color: #555; 
+            color: white; /* Change text color on hover */
+        }
+        .container { 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: auto; /* Center the container */
+            position: relative; /* Position relative to keep stacking context */
+            z-index: 1; /* Ensure it is above the video */
+        }
+        h2 { 
+            text-align: center; /* Center the heading */
+            color: #333; 
+            margin-bottom: 20px; /* Add margin below the heading */
+            font-size: 2em; /* Increase font size */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better contrast */
+        }
+        .watch-collection { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Improved responsiveness */
+            gap: 20px; /* Spacing between items */
+        }
+        .watch-item { 
+            border: 1px solid #ddd; 
+            border-radius: 8px; /* Rounded corners */
+            padding: 15px; 
+            text-align: center; 
+            background-color: white; /* White background for items */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Light shadow for items */
+            transition: transform 0.2s; /* Smooth scale effect on hover */
+        }
+        .watch-item:hover { 
+            transform: scale(1.05); /* Slightly scale up on hover */
+        }
+        .watch-item img { 
+            width: 200px; 
+            height: 200px; 
+            object-fit: contain; 
+            margin-bottom: 10px; 
+            border-radius: 4px; /* Rounded corners for images */
+        }
+        .watch-info { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-top: 10px; 
+            gap: 10px; 
+        }
+        .watch-info p { 
+            margin: 0; 
+            font-size: 1.2em; /* Increase font size */
+            font-weight: bold; 
+            color: #333; /* Dark text color for contrast */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+        }
+        .button { 
+            background-color: #28a745; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; /* Rounded corners for button */
+            cursor: pointer; 
+            font-weight: bold; /* Bold button text */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+            font-size: 1em; /* Adjust button font size */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+        }
+        .button:hover { 
+            background-color: #218838; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="video-background" autoplay muted loop>
+        <source src="https://www.audemarspiguet.com/content/dam/ap/com/materiautheque/forged-carbon/AP-ROC_materiaux_1080x1080.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header -->
+    <header>
+        <h1>Rare Watch Marketplace</h1>
+        <p>Exclusive rare watches for collectors and enthusiasts</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="Elementry.html">Home</a>
+        <a href="elementary contact us .html">Contact Us</a>
+        <a href="elementary purchaes.html">Purchase</a>
+    </nav>
+
+    <!-- Purchase Content -->
+    <div class="container">
+        <h2>Purchase Our Collection</h2>
+        <div class="watch-collection">
+            <div class="watch-item">
+                <img src="https://cdn.shopify.com/s/files/1/0634/3888/1014/files/PEWGF0054501_01_500x.png?v=1726560127" alt="Watch 1">
+                <p><strong>Mensor Watch Police For Men</strong></p>
+                <div class="watch-info">
+                    <p>100k $</p>
+                    <button class="button" onclick="purchaseAlert('Mensor Watch Police For Men', 1500)">Purchase</button>
+                </div>
+            </div>
+            <div class="watch-item">
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/c_limit,w_640/v1710348102/rolexcom/new-watches/2024/hub-watches/collection-rolex-watches-sky-dweller-m336935-0008-10152_rsa_cap_everose_42_carrousel_24_19_02_2024-portrait" alt="Watch 2">
+                <p><strong>Rolex Sky Dweller</strong></p>
+                <div class="watch-info">
+                    <p>5.3 million $</p>
+                    <button class="button" onclick="purchaseAlert('Rolex Sky Dweller', 2000)">Purchase</button>
+                </div>
+            </div>
+            <div class="watch-item">
+                <img src="https://dynamicmedia.audemarspiguet.com/is/image/audemarspiguet/carouselHP_novelties_1000x1321_ROC_26650FO-OO-D353CA-01?size=568,0&fmt=avif-alpha&dpr=off" alt="Watch 3">
+                <p><strong>Royal Oak Concept Split-Seconds Chronograph GMT</strong></p>
+                <div class="watch-info">
+                    <p>7.5 million $</p>
+                    <button class="button" onclick="purchaseAlert('Royal Oak Concept Split-Seconds Chronograph GMT', 1800)">Purchase</button>
+                </div>
+            </div>
+            <div class="watch-item">
+                <img src="https://www.tissotwatches.com/media/catalog/product/T/1/T127.407.16.041.01_R.png?im=Resize=(1200,1200)" alt="Watch 4">
+                <p><strong>Tissot Gentleman Powermatic 80 Silicium</strong></p>
+                <div class="watch-info">
+                    <p>200k $</p>
+                    <button class="button" onclick="purchaseAlert('Tissot Gentleman Powermatic 80 Silicium', 1700)">Purchase</button>
+                </div>
+            </div>
+            <div class="watch-item">
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/c_limit,w_800/v1710348070/rolexcom/new-watches/2024/hub-watches/collection-rolex-watches-datejust-m126234-0051-10161_rsa_datejust_31_m278274_0018_carrousel_24-portrait" alt="Watch 5">
+                <p><strong>GMT-MASTER II</strong></p>
+                <div class="watch-info">
+                    <p>1.8 million $</p>
+                    <button class="button" onclick="purchaseAlert('GMT-MASTER II', 2200)">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle purchase alert
+        function purchaseAlert(watchName, price) {
+            alert('You have selected ' + watchName + ' for $' + price + '.\nThank you for your purchase!');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
